@@ -7,6 +7,7 @@ public class Summary {
     Map<String, String> marketIntermediaries = new HashMap<String, String>();
     Map<String, String> nonConsentingInvestorParticipants = new HashMap<String, String>();
     Map<String, String> total = new HashMap<String, String>();
+    Map<String, String> totalIssuesLastUpdate = new HashMap<String, String>();
 
     public Map<String, String> getTotalIssuesLastUpdate() {
         return totalIssuesLastUpdate;
@@ -16,7 +17,6 @@ public class Summary {
         this.totalIssuesLastUpdate = totalIssuesLastUpdate;
     }
 
-    Map<String, String> totalIssuesLastUpdate = new HashMap<String, String>();
 
     public Map<String, String> getMarketIntermediaries() {
         return marketIntermediaries;

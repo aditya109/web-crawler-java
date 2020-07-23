@@ -1,6 +1,11 @@
 package com.webcrawl.core;
-
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.dataformat.csv.CsvMapper;
+import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+import com.fasterxml.jackson.dataformat.csv.CsvSchema.Builder;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -11,11 +16,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 public class WebScrape {
@@ -120,19 +124,41 @@ public class WebScrape {
             tempMap.put(row.select("td.col-shareholding.text-right div.mobile-list-heading").text(), row.select("td.col-shareholding.text-right div.mobile-list-body").text());
             tempMap.put(row.select("td.col-shareholding-percent.text-right div.mobile-list-heading").text(), row.select("td.col-shareholding-percent.text-right div.mobile-list-body").text());
 
-            for(Map.Entry<String, String> en : tempMap.entrySet()) {
-                System.out.println(en.getKey() + " : " + en.getValue());
-            }
             tempList.add(tempMap);
         }
+
         consentingInvestorParticipants.setTable(tempList);
 
         ObjectMapper mapper = new ObjectMapper();
 
         String summaryJSONString = mapper.writeValueAsString(summary);
-        System.out.println(summaryJSONString);
-        String consentingInvestorParticipantsJSONString = mapper.writeValueAsString(consentingInvestorParticipants);
 
+        String consentingInvestorParticipantsJSONString = mapper.writeValueAsString(consentingInvestorParticipants.getTable());
+
+        //  converted tableJSON to csv as `table.csv`
+        JsonNode tableJSON = new ObjectMapper().readTree(consentingInvestorParticipantsJSONString);
+
+        Builder csvSchemaBuilder = CsvSchema.builder();
+        JsonNode firstObject = tableJSON.elements().next();
+        firstObject.fieldNames().forEachRemaining(csvSchemaBuilder::addColumn);
+        CsvSchema csvSchema = csvSchemaBuilder.build().withHeader();
+
+        CsvMapper csvMapper = new CsvMapper();
+        csvMapper.writerFor(JsonNode.class).with(csvSchema).writeValue(new File("src/main/resources/table.csv"), tableJSON);
+
+        FileWriter file=null;
+
+        try {
+            file = new FileWriter("src/main/resources/summary.csv");
+            CSVUtils.writeLine(file, Collections.singletonList(summaryJSONString));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            file.flush();
+            file.close();
+        }
 
 
     }
