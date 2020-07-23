@@ -1,0 +1,82 @@
+<div class="summary-category">
+ Market Intermediaries
+</div>
+<div class="shareholding">
+ <div class="header">
+  Shareholding in CCASS
+ </div>
+ <div class="value">
+  1,594,720,501
+ </div>
+</div>
+<div class="number-of-participants">
+ <div class="header">
+  Number of Participants
+ </div>
+ <div class="value">
+  293
+ </div>
+</div>
+<div class="percent-of-participants">
+ <div class="header">
+  % of the total number of Issued Shares/ Warrants/ Units
+ </div>
+ <div class="value">
+  68.01%
+ </div>
+</div>
+
+
+<div class="summary-category">
+ Non-consenting Investor Participants
+</div>
+<div class="shareholding">
+  Shareholding in CCASS
+ </div>
+ <div class="value">
+  8,973,506
+ </div>
+</div>
+<div class="number-of-participants">
+ <div class="header">
+  Number of Participants
+ </div>
+ <div class="value">
+  39
+ </div>
+</div>
+<div class="percent-of-participants">
+ <div class="header">
+  % of the total number of Issued Shares/ Warrants/ Units
+ </div>
+ <div class="value">
+  0.38%
+ </div>
+</div>
+<div class="summary-category">
+ Total
+</div>
+<div class="shareholding">
+ <div class="header">
+  Shareholding in CCASS
+ </div>
+ <div class="value">
+  1,603,694,007
+ </div>
+</div>
+<div class="number-of-participants">
+ <div class="header">
+  Number of Participants
+ </div>
+ <div class="value">
+  332
+ </div>
+</div>
+<div class="percent-of-participants">
+ <div class="header">
+  % of the total number of Issued Shares/ Warrants/ Units
+ </div>
+ <div class="value">
+  68.39%
+ </div>
+</div>
