@@ -1,5 +1,6 @@
 package com.webcrawl.core;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -125,6 +126,15 @@ public class WebScrape {
             tempList.add(tempMap);
         }
         consentingInvestorParticipants.setTable(tempList);
+
+        ObjectMapper mapper = new ObjectMapper();
+
+        String summaryJSONString = mapper.writeValueAsString(summary);
+        System.out.println(summaryJSONString);
+        String consentingInvestorParticipantsJSONString = mapper.writeValueAsString(consentingInvestorParticipants);
+
+
+
     }
 }
 //mvn clean package ; java -jar target/intro-1.0-SNAPSHOT.jar 123456

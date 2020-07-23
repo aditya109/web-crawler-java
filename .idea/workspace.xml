@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99c3fc97-7597-4783-ad53-6179a151ae26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/webcrawl/core/ConsentingInvestorParticipants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webcrawl/core/Summary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webcrawl/core/Summary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/webcrawl/core/WebScrape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/webcrawl/core/WebScrape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webcrawl/core/Summary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webcrawl/core/Summary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webcrawl/core/WebScrape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/webcrawl/core/WebScrape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/intro-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/intro-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-intro-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-intro-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.webcrawl.core.WebCrawlTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.webcrawl.core.WebCrawlTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.webcrawl.core.WebCrawlTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.webcrawl.core.WebCrawlTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +112,7 @@
       <workItem from="1595483396694" duration="941000" />
       <workItem from="1595486388041" duration="10075000" />
       <workItem from="1595512610007" duration="1343000" />
-      <workItem from="1595514024080" duration="5672000" />
+      <workItem from="1595514024080" duration="6137000" />
     </task>
     <servers />
   </component>
