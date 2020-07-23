@@ -4,40 +4,43 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Summary {
-    Map<String, Integer> marketIntermediaries = new HashMap<String, Integer>();
-    Map<String, Integer> nonConsentingInvestorParticipants = new HashMap<String, Integer>();
-    Map<String, Integer> Total = new HashMap<String, Integer>();
-    int totalNumberOfIssue = 0;
+    Map<String, String> marketIntermediaries = new HashMap<String, String>();
+    Map<String, String> nonConsentingInvestorParticipants = new HashMap<String, String>();
+    Map<String, String> total = new HashMap<String, String>();
 
-    public Map<String, Integer> getMarketIntermediaries() {
+    public Map<String, String> getTotalIssuesLastUpdate() {
+        return totalIssuesLastUpdate;
+    }
+
+    public void setTotalIssuesLastUpdate(Map<String, String> totalIssuesLastUpdate) {
+        this.totalIssuesLastUpdate = totalIssuesLastUpdate;
+    }
+
+    Map<String, String> totalIssuesLastUpdate = new HashMap<String, String>();
+
+    public Map<String, String> getMarketIntermediaries() {
         return marketIntermediaries;
     }
 
-    public void setMarketIntermediaries(Map<String, Integer> marketIntermediaries) {
+    public void setMarketIntermediaries(Map<String, String> marketIntermediaries) {
         this.marketIntermediaries = marketIntermediaries;
     }
 
-    public Map<String, Integer> getNonConsentingInvestorParticipants() {
+    public Map<String, String> getNonConsentingInvestorParticipants() {
         return nonConsentingInvestorParticipants;
     }
 
-    public void setNonConsentingInvestorParticipants(Map<String, Integer> nonConsentingInvestorParticipants) {
+    public void setNonConsentingInvestorParticipants(Map<String, String> nonConsentingInvestorParticipants) {
         this.nonConsentingInvestorParticipants = nonConsentingInvestorParticipants;
     }
 
-    public Map<String, Integer> getTotal() {
-        return Total;
+    public Map<String, String> getTotal() {
+        return total;
     }
 
-    public void setTotal(Map<String, Integer> total) {
-        Total = total;
+    public void setTotal(Map<String, String> total) {
+        this.total = total;
     }
 
-    public int getTotalNumberOfIssue() {
-        return totalNumberOfIssue;
-    }
 
-    public void setTotalNumberOfIssue(int totalNumberOfIssue) {
-        this.totalNumberOfIssue = totalNumberOfIssue;
-    }
 }
